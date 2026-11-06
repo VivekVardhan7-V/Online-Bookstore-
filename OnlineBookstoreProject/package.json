@@ -1,0 +1,14 @@
+{
+  "name": "online-bookstore-project",
+  "private": true,
+  "scripts": {
+    "dev": "concurrently \"npm --prefix backend run dev\" \"npm --prefix frontend run dev\"",
+    "build": "npm --prefix frontend run build",
+    "server": "npm --prefix backend run dev",
+    "client": "npm --prefix frontend run dev",
+    "start": "npm --prefix backend run start"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.2"
+  }
+}
